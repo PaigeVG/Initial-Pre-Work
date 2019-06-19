@@ -1,0 +1,43 @@
+<!-- 
+    Radio buttons are another input type, and allow the user to select one of multiple options in the same group. They have a lot of moving parts that have to be kept track of. To make a functioning and best-practice-following group of radio inputs...
+
+    1. Create a label for each input
+    2. Create inputs and nest each one under a label
+    3. Set the name attribute on every input that you want to be part of the 
+       group to something descriptive of said group
+    4. Set the inputs' type attribute to radio
+    5. Set the inputs' id attribute to something descriptive of that option
+    6. Set the for attribute of its label so that it matches the id
+
+    Failure to follow this set of rules will result in mucho sadness
+-->
+
+<h2>CatPhotoApp</h2>
+<main>
+    <p>Click here to view more <a href="#" target="_blank">cat photos</a>.</p>
+    <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+    <p>Things cats love:</p>
+    <ul>
+        <li>Stink</li>
+        <li>Chaos</li>
+        <li>Destruction</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+        <li>Closed doors</li>
+        <li>Empty foodbowls</li>
+        <li>Clean litterboxes</li>
+    </ol>
+    <form action="/submit-cat-photo">
+        <input type="text", placeholder="cat photo URL" required>
+        <label for="indoor">
+            Indoor
+            <input type="radio" name="indoor-outdoor" id="indoor">
+        </label>
+        <label for="outdoor">
+            Outdoor
+            <input type="radio" name="indoor-outdoor" id="outdoor">
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+</main>
