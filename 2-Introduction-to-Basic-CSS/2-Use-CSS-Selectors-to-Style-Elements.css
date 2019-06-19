@@ -3,7 +3,7 @@ In-line styling isn't really the ideal way to do things in many circumstances. A
 
 To properly form a simple element selector, use the general formula...
 
-selectedTag { propertyName: propertyValue;}
+selected-tag { propertyName: propertyValue;}
 
 This will apply the styling to every instance of selectedTag.
 */
