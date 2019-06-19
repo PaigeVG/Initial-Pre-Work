@@ -1,0 +1,23 @@
+<!-- Adding the attribute required to an input element makes the form unsubmittable until the input has been filled out. required seems to be its own value, it doesn't get set to anything. Browsers have some default behaviour to show the user that a field is required after they attempt to submit it. In Firefox, a text input gains a red border and a small box pops in below asking you to fill out the field. -->
+
+<h2>CatPhotoApp</h2>
+<main>
+    <p>Click here to view more <a href="#" target="_blank">cat photos</a>.</p>
+    <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+    <p>Things cats love:</p>
+    <ul>
+        <li>Stink</li>
+        <li>Chaos</li>
+        <li>Destruction</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+        <li>Closed doors</li>
+        <li>Empty foodbowls</li>
+        <li>Clean litterboxes</li>
+    </ol>
+    <form action="/submit-cat-photo">
+        <input type="text", placeholder="cat photo URL" required>
+        <button type="submit">Submit</button>
+    </form>
+</main>
