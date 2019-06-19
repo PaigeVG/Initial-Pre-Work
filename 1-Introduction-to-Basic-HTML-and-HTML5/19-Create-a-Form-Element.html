@@ -1,0 +1,22 @@
+<!-- In order to actually send data to the server, you must have a form element with its action attribute set to the URL you want to post to. All inputs and other parts of the form should be nested inside the main form element. Paths on HTML attributes can be relative (Q: Relative to where? A: to the HTML document). Absolute paths are taken from the root of the SITE. -->
+
+<h2>CatPhotoApp</h2>
+<main>
+    <p>Click here to view more <a href="#" target="_blank">cat photos</a>.</p>
+    <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+    <p>Things cats love:</p>
+    <ul>
+        <li>Stink</li>
+        <li>Chaos</li>
+        <li>Destruction</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+        <li>Closed doors</li>
+        <li>Empty foodbowls</li>
+        <li>Clean litterboxes</li>
+    </ol>
+    <form action="/submit-cat-photo">
+        <input type="text", placeholder="cat photo URL">
+    </form>
+</main>
