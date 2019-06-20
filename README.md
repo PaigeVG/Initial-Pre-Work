@@ -8,7 +8,7 @@ In non-technical terms, when we hit https://www.techtonic.com/ we look up its ad
 
 ## From start to finish, how does data reach you to be rendered in the browser?
 
-First, we reach out to a DNS to find out what IP address corresponds with the domain www.techtonic.com. Assuming the DNS responds, we now have an IP address in hand that we can use to send a GET request using the HTTPS protocol. When techtonic's webserver receives our GET, any number of things could happen depending on how the server-side code is set up to process it. Generally speaking, however, it will send us back a status code of 200 (success, OK) along with the HTML, CSS, and JavaScript needed to render the page. 
+First, we reach out to a DNS to find out what IP address corresponds to the domain www.techtonic.com. Assuming the DNS responds, we now have an IP address in hand that we can use to send a GET request using the HTTPS protocol. When techtonic's webserver receives our GET, any number of things could happen depending on how the server-side code is set up to process it. Generally speaking, however, it will send us back a status code of 200 (success, OK) along with the HTML, CSS, JavaScript, and other assets needed to render the page. 
 
 ## What code is rendered in the browser?
 
