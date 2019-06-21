@@ -1,0 +1,19 @@
+<!-- 
+Set fallbacks for browser compatibility purposes by setting a redundant declaration higher than your "real" one. New browser will read both and use the lower, "real" value, old browser will ignore the "real" and stick with the higher definition.
+
+Q: Doesn't this kind of defeat the purpose of variables? Now I have to maintain a series of ad-hoc backup declarations anyway. :(
+ -->
+
+<style>
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+    
+    background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>
