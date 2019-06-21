@@ -1,0 +1,43 @@
+<!-- 
+A flex container has a main axis and a cross axis defined by flex-direction, where the main axis is the direction along which the flex items are arranged. 
+
+The property justify-content allows you to control how any space between flex items on the main axis is divied up. There are lots of choices for the value of this property.
+
+center        pushes items towards container center
+
+flex-start    pushes items towards main start
+
+flex-end      pushes items towards main end
+
+space-between pushes first item to main start and last   
+              item to main end, with other elements evenly spaced between them.
+
+space-around  is the same as -between except that first    
+              and last are simply spaced like the other items.
+-->
+
+<style>
+  #box-container {
+    background: gray;
+    justify-content: center;
+    display: flex;
+    height: 500px;
+    
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 100%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 100%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
