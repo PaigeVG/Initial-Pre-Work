@@ -35,15 +35,15 @@ Assuming that we are referring to how many instances of each file are created on
 Depending on what is meant by an instance and who is hypothetically accessing it, the answer varies. I'll address a couple of cases I can think of.
 
 *Instance meaning copy of the source code and accessor being the client:
-The answer is (hopefully) zero. Unless something is seriously wrong with your code, the browser will never make the full source available to the client. HTML, CSS, and JS obviously must be transmitted and there is very little that can be done to obfuscate their contents, but this is not usually a big concern.
+The answer is (hopefully) zero. Unless something is seriously wrong with your code, the browser will never make the full source available to the client. HTML, CSS, and JS obviously must be transmitted and there is very little that can be done to obfuscate their contents, but this is not usually (and should not be) a big concern.
 
 *Instance meaning copy of the source code and accessor being the maintainer:
 A server may consist of more than one machine, and each machine may need its own copy. So, the answer is anywhere from one to the number of machines.
 
-*Instance meaning running server process and accessor being the user:
+*Instance meaning server process and accessor being the user:
 Very much depends on what kind of web server is being run. According to the StackOverflow post found here -> (https://stackoverflow.com/questions/1969545/some-fundamental-but-important-questions-about-web-development), a single request could be handled either by its own dedicated process, its own thread, or neither. From the user's point of view you could say a process-per-request server provides one "instance" per request, although of course only the end results of the process's work is available to the user, not the process itself. 
 
-*Instance meaning running server process and accessor being the maintainer:
+*Instance meaning server process and accessor being the maintainer:
 Again, as above, it varies. If we imagine a situation where each request gets its own process and the maintainer is able to monitor all such processes, then the "instances available" is the number of current requests.
 
 
