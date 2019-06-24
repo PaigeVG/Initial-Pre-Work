@@ -1,0 +1,28 @@
+<!-- 
+If the container is larger than needed for the elements, flex-grow takes effect. It also has number values that work similarly to flex-shrink, with higher numbers meaning more growth relative to other elements in the container.
+ -->
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+  
+  #box-1 {
+    background-color: dodgerblue;
+    flex-grow: 1;
+    height: 200px;
+  }
+  
+  #box-2 {
+    background-color: orangered;
+    flex-grow:2;
+    height: 200px;
+    
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
