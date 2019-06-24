@@ -12,7 +12,7 @@ First, we reach out to a DNS to find out what IP address corresponds to the doma
 
 ## What code is rendered in the browser?
 
-put your answer here
+The browser does not render code itself directly, but rather interprets HTML and CSS to render the final document seen by the user. JavaScript executing inside the browser's engine may further modify the document by making changes to the DOM or other aspects of the page.
 
 ## What is the server-side code’s main function?
 
@@ -28,12 +28,25 @@ Runtime refers to the period during which the code is actually executing, hence 
 
 ## How many instances of the client-side assets (HTML, CSS, JS, Images, etc.) are created?
 
-One per request. Assets are not automatically persisted on the client's machine between requests.
+Assuming that we are referring to how many instances of each file are created on the client computer, the answer is one per request. Assets are not automatically persisted between requests.
 
 ## How many instances of the server-side code are available at any given time?
 
-put your answer here
+Depending on what is meant by an instance and who is hypothetically accessing it, the answer varies. I'll address a couple of cases I can think of.
+
+*Instance meaning copy of the source code and accessor being the client:
+The answer is (hopefully) zero. Unless something is seriously wrong with your code, the browser will never make the full source available to the client. HTML, CSS, and JS obviously must be transmitted and there is very little that can be done to obfuscate their contents, but this is not usually a big concern.
+
+*Instance meaning copy of the source code and accessor being the maintainer:
+A server may consist of more than one machine, and each machine may need its own copy. So, the answer is anywhere from one to the number of machines.
+
+*Instance meaning running server process and accessor being the user:
+Very much depends on what kind of web server is being run. According to the StackOverflow post found here -> (https://stackoverflow.com/questions/1969545/some-fundamental-but-important-questions-about-web-development), a single request could be handled either by its own dedicated process, its own thread, or neither. From the user's point of view you could say a process-per-request server provides one "instance" per request, although of course only the end results of the process's work is available to the user, not the process itself. 
+
+*Instance meaning running server process and accessor being the maintainer:
+Again, as above, it varies. If we imagine a situation where each request gets its own process and the maintainer is able to monitor all such processes, then the "instances available" is the number of current requests.
+
 
 ## How many instances of the databases connected to the server application are created?
 
-put your answer here
+While web architecture can get pretty complicated, typically, the server will create and use just one database connection.
