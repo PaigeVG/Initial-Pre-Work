@@ -1,0 +1,36 @@
+<!-- The align-items property is analogous to justify-content. Instead of adjusting items' position on the main axis, it adjusts along the cross axis.  
+
+flex-start  pushes items to cross start
+flex-end    pushes items to cross end
+center      aligns items evenly around center
+stretch     stretch items out to fill container
+baseline    align around text baseline
+
+Most align-items values make no gaurantee that the items will be the same length along cross.
+-->
+
+<style>
+  #box-container {
+    align-items: center;
+    background: gray;
+    display: flex;
+    height: 500px;
+    
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 200px;
+    font-size: 24px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 200px;
+    font-size: 18px;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"><p>Hello</p></div>
+  <div id="box-2"><p>Goodbye</p></div>
+</div>
