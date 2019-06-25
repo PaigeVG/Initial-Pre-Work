@@ -1,7 +1,11 @@
-// Since arrays are just another value, they can be nested inside of other arrays.
+// Arrays are indexed like strings.
 
 // Example
-var ourArray = [["the universe", 42], ["everything", 101010]];
+var ourArray = [50,60,70];
+var ourData = ourArray[0]; // equals 50
+
+// Setup
+var myArray = [50,60,70];
 
 // Only change code below this line.
-var myArray = [["potato", "tomato", "elbow", "john doe"], ["yam", "Sam", "lamb", "spam"]];
+var myData = myArray[0]

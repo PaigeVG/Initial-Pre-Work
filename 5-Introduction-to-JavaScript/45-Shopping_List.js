@@ -1,14 +1,3 @@
-// unshift will add elements to the start of an array rather than remove them.
+// multi-dimensional array practice
 
-// Example
-var ourArray = ["Stimpson", "J", "cat"];
-ourArray.shift(); // ourArray now equals ["J", "cat"]
-ourArray.unshift("Happy"); 
-// ourArray now equals ["Happy", "J", "cat"]
-
-// Setup
-var myArray = [["John", 23], ["dog", 3]];
-myArray.shift();
-
-// Only change code below this line.
-myArray.unshift(["Paul", 35])
+var myList = [["potatos", 100], ["yams", 3000], ["pickles", 3], ["spices", 1], ["soylent", 10]];

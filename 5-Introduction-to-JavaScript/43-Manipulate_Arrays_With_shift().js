@@ -1,13 +1,13 @@
-// pop is a similar function, but takes an element OFF the end of an array instead and returns it.
+// shift removes and returns the first element of an array rather than the last.
 
 // Example
-var ourArray = [1,2,3];
-var removedFromOurArray = ourArray.pop(); 
-// removedFromOurArray now equals 3, and ourArray now equals [1,2]
+var ourArray = ["Stimpson", "J", ["cat"]];
+var removedFromOurArray = ourArray.shift();
+// removedFromOurArray now equals "Stimpson" and ourArray now equals ["J", ["cat"]].
 
 // Setup
-var myArray = [["John", 23], ["cat", 2]];
+var myArray = [["John", 23], ["dog", 3]];
 
 // Only change code below this line.
-var removedFromMyArray = myArray.pop();
+var removedFromMyArray = myArray.shift();
 
