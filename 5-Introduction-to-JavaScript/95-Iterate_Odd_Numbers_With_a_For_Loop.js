@@ -1,9 +1,10 @@
-// a for loop runs some initialization once before the first loop, runs until its condition is false, and also executes an expression at the end of each iteration.
+// You can count up your loop variable however you want
+
 
 // Example
 var ourArray = [];
 
-for (var i = 0; i < 5; i++) {
+for (var i = 0; i < 10; i += 2) {
   ourArray.push(i);
 }
 
@@ -12,7 +13,6 @@ var myArray = [];
 
 // Only change code below this line.
 
-for (var i = 1; i < 6; i++) {
-  myArray.push(i);
+for(var i = 1; i < 10; i += 2) {
+  myArray.push(i)
 }
-

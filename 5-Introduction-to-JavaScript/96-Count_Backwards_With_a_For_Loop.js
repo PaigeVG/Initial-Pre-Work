@@ -1,10 +1,9 @@
-// You can count up your loop variable however you want
-
+// You can count up (or down) your loop variable however you want
 
 // Example
 var ourArray = [];
 
-for (var i = 0; i < 10; i += 2) {
+for (var i = 10; i > 0; i -= 2) {
   ourArray.push(i);
 }
 
@@ -13,6 +12,6 @@ var myArray = [];
 
 // Only change code below this line.
 
-for(var i = 1; i < 10; i += 2) {
-  myArray.push(i)
+for (var i = 9; i > 0; i -= 2) {
+  myArray.push(i);
 }
