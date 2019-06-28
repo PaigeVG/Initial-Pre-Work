@@ -1,18 +1,13 @@
-// Objects are a type of collection that stores structured data in properties, which are strings (or numbers, which are typecast as strings in the end).
+// Access object properties with dot notation if you know the property you want already. Use bracket notation for dynamic access.
 
-// Example
-var ourDog = {
-  "name": "Camper",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["everything!"]
+// Setup
+var testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
 };
 
-// Only change code below this line.
+// Only change code below this line
 
-var myDog = {
-  "name": "Galvantula",
-  "legs": 8,
-  "tails": 0,
-  "friends": ["me", "you", "pikachu"]
-};
+var hatValue = testObj.hat;      // Change this line
+var shirtValue = testObj.shirt;    // Change this line

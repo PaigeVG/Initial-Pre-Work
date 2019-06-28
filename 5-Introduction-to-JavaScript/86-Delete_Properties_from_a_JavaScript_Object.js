@@ -1,22 +1,24 @@
-// Add new properties after object initialization in the same way you update existing properties, "access" and re-assign.
+// delete object properties with the delete keyword
 
 // Example
 var ourDog = {
   "name": "Camper",
   "legs": 4,
   "tails": 1,
-  "friends": ["everything!"]
+  "friends": ["everything!"],
+  "bark": "bow-wow"
 };
 
-ourDog.bark = "bow-wow";
+delete ourDog.bark;
 
 // Setup
 var myDog = {
   "name": "Happy Coder",
   "legs": 4,
   "tails": 1,
-  "friends": ["freeCodeCamp Campers"]
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
 };
 
 // Only change code below this line.
-myDog.bark = "sparfle";
+delete myDog.tails;

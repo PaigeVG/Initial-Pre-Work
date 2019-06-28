@@ -1,22 +1,20 @@
-// Objects can be used as a sort of lookup table, which is a better way to implement a simple mapping of values than a switch statement.
+// the method hasOwnProperty checks if an object has a property.
 
 // Setup
-function phoneticLookup(val) {
-  var result = "";
+var myObj = {
+  gift: "pony",
+  pet: "kitten",
+  bed: "sleigh"
+};
 
-  // Only change code below this line
-  var lookup = {
-    "alpha": "Adams",
-    "bravo": "Boston",
-    "charlie": "Chicago",
-    "delta": "Denver",
-    "echo": "Easy",
-    "foxtrot": "Frank"
+function checkObj(checkProp) {
+  if (myObj.hasOwnProperty(checkProp)) {
+    return myObj[checkProp];
   }
-  result = lookup[val];
-  // Only change code above this line
-  return result;
+  else {
+    return "Not Found"
+  }
 }
 
-// Change this value to test
-phoneticLookup("charlie");
+// Test your code by modifying these values
+checkObj("gift");

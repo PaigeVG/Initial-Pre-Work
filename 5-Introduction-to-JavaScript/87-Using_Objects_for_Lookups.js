@@ -1,24 +1,22 @@
-// delete object properties with the delete keyword
-
-// Example
-var ourDog = {
-  "name": "Camper",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["everything!"],
-  "bark": "bow-wow"
-};
-
-delete ourDog.bark;
+// Objects can be used as a sort of lookup table, which is a better way to implement a simple mapping of values than a switch statement.
 
 // Setup
-var myDog = {
-  "name": "Happy Coder",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["freeCodeCamp Campers"],
-  "bark": "woof"
-};
+function phoneticLookup(val) {
+  var result = "";
 
-// Only change code below this line.
-delete myDog.tails;
+  // Only change code below this line
+  var lookup = {
+    "alpha": "Adams",
+    "bravo": "Boston",
+    "charlie": "Chicago",
+    "delta": "Denver",
+    "echo": "Easy",
+    "foxtrot": "Frank"
+  }
+  result = lookup[val];
+  // Only change code above this line
+  return result;
+}
+
+// Change this value to test
+phoneticLookup("charlie");

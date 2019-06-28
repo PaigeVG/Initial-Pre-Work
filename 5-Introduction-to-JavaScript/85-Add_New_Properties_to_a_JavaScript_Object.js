@@ -1,4 +1,4 @@
-// Update object properties by accessing them and re-assigning.
+// Add new properties after object initialization in the same way you update existing properties, "access" and re-assign.
 
 // Example
 var ourDog = {
@@ -8,16 +8,15 @@ var ourDog = {
   "friends": ["everything!"]
 };
 
-ourDog.name = "Happy Camper";
+ourDog.bark = "bow-wow";
 
 // Setup
 var myDog = {
-  "name": "Coder",
+  "name": "Happy Coder",
   "legs": 4,
   "tails": 1,
   "friends": ["freeCodeCamp Campers"]
 };
 
 // Only change code below this line.
-
-myDog.name = "Happy Coder";
+myDog.bark = "sparfle";

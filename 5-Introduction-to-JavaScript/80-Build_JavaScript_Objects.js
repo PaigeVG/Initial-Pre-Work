@@ -1,33 +1,18 @@
-// Practice with both switch and if/else if/else. Shows ideal use cases for both. Switch for the many many conditions of the cards, and if for the simple decision of Bet or Hold.
- 
-var count = 0;
+// Objects are a type of collection that stores structured data in properties, which are strings (or numbers, which are typecast as strings in the end).
 
-function cc(card) {
-  switch (card) {
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-      count++;
-      break;
-    case 10: 
-    case "J": 
-    case "Q": 
-    case "K": 
-    case "A": 
-      count--;
-      break;
-  }
+// Example
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
 
-  if (count > 0) {
-    return count + " Bet";
-  }
-  else {
-    return count + " Hold";
-  }
-}
+// Only change code below this line.
 
-// Add/remove calls to test your function.
-// Note: Only the last will display
-cc(2); cc(3); cc(7); cc('K'); cc('A');
+var myDog = {
+  "name": "Galvantula",
+  "legs": 8,
+  "tails": 0,
+  "friends": ["me", "you", "pikachu"]
+};

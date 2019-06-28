@@ -1,16 +1,25 @@
-// chain dot or bracket notation to access nested objects. Mixing and matching is allowed.
+// You can nest objects in objects, arrays in objects, objects in arrays. Go nuts! Access will still work and chain just as you expect.
 
 // Setup
-var myStorage = {
-  "car": {
-    "inside": {
-      "glove box": "maps",
-      "passenger seat": "crumbs"
-     },
-    "outside": {
-      "trunk": "jack"
-    }
-  }
-};
+var myPlants = [
+  { 
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }  
+];
 
-var gloveBoxContents = myStorage.car.inside["glove box"]; // Change this line
+// Only change code below this line
+
+var secondTree = myPlants[1].list[1]; // Change this line

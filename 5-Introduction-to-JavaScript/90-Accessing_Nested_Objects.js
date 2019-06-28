@@ -1,26 +1,16 @@
-// Data structures can be nested in one another in arbitrary ways. JSON is another format in which to store data that is similar to a JS object.
+// chain dot or bracket notation to access nested objects. Mixing and matching is allowed.
 
-var myMusic = [
-  {
-    "artist": "Billy Joel",
-    "title": "Piano Man",
-    "release_year": 1973,
-    "formats": [ 
-      "CD",
-      "8T",
-      "LP"
-    ],
-    "gold": true
-  },
-  {
-    "artist": "Animal Collective",
-    "title": "Strawberry Jam",
-    "release_year": 2007,
-    "formats": [
-      "CD",
-      "LP",
-      "Idk honestly, some other things"
-    ],
-    "gold": false
+// Setup
+var myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
   }
-];
+};
+
+var gloveBoxContents = myStorage.car.inside["glove box"]; // Change this line
