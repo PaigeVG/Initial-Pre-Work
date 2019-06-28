@@ -1,25 +1,57 @@
-// You can nest objects in objects, arrays in objects, objects in arrays. Go nuts! Access will still work and chain just as you expect.
+// Practice with conditional logic and object manipulation.
 
 // Setup
-var myPlants = [
-  { 
-    type: "flowers",
-    list: [
-      "rose",
-      "tulip",
-      "dandelion"
+var collection = {
+  "2548": {
+    "album": "Slippery When Wet",
+    "artist": "Bon Jovi",
+    "tracks": [ 
+      "Let It Rock", 
+      "You Give Love a Bad Name" 
     ]
   },
-  {
-    type: "trees",
-    list: [
-      "fir",
-      "pine",
-      "birch"
+  "2468": {
+    "album": "1999",
+    "artist": "Prince",
+    "tracks": [ 
+      "1999", 
+      "Little Red Corvette" 
     ]
-  }  
-];
+  },
+  "1245": {
+    "artist": "Robert Palmer",
+    "tracks": [ ]
+  },
+  "5439": {
+    "album": "ABBA Gold"
+  }
+};
+// Keep a copy of the collection for tests
+var collectionCopy = JSON.parse(JSON.stringify(collection));
 
 // Only change code below this line
+function updateRecords(id, prop, value) {
+  var album = collection[id]
+  var propIsTracks = (prop == "tracks");
+  var valIsPresent = (value != "");
 
-var secondTree = myPlants[1].list[1]; // Change this line
+  if (propIsTracks && valIsPresent) {
+    if (album.tracks) {
+      album.tracks.push(value);
+    }
+    else {
+      album.tracks = [value];
+    }
+  }
+  else if (valIsPresent) {
+    album[prop] = value;
+  }
+  else {
+    delete album[prop];
+  }
+
+  return collection;
+}
+
+// Alter values below to test your code
+updateRecords(5439, "artist", "ABBA");
